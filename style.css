@@ -1,0 +1,67 @@
+h1,
+p {
+  display: flex;
+  justify-content: center;
+}
+
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* background-color: #0b4f6c; */
+}
+
+.card-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2px;
+  border: 1px solid lightgrey;
+  border-radius: 10%;
+  height: auto;
+  width: 250px;
+  padding: 2px;
+  background-color: #fbfbff;
+  box-shadow: 2px 2px 5px lightgrey;
+}
+
+
+.hunger-bar-outer,
+.love-bar-outer {
+  width: 60%;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+
+.hunger-bar-inner,
+.love-bar-inner {
+  height: 20px;
+  border-radius: 5px;
+  transition: width 0.5s;
+  color: #fbfbff;
+}
+
+.hunger-bar-inner {
+  background-color: #ff4500;
+  width: 0%;
+}
+
+.love-bar-inner {
+  background-color: #ef0194;
+}
+
+button {
+  margin: 5px;
+}
+
+.petEmoji:hover {
+  cursor: grab;
+}
+
+.petEmoji {
+  font-size: 50px;
+}
